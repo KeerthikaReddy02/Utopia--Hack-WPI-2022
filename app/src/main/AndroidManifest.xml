@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.utopia">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Utopia">
+
+        <activity
+            android:name=".questions.QuestionActivity6"
+            android:exported="false" />
+        <activity
+            android:name=".questions.QuestionActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".questions.QuestionActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".questions.QuestionActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".questions.QuestionActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".questions.QuestionActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SymptomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StepsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProbabilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

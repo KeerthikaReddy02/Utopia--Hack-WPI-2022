@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quesstion_bg"
+    tools:context=".questions.QuestionActivity1">
+    <ImageButton
+        android:id="@+id/hamburgerImageButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_hamburger_black" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDB0AA"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hamburgerImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Please Fill The Following Details!"
+            android:textAlignment="center"
+            android:textColor="#445660"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="What do we call you?"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Eg. Andrew"
+                android:paddingStart="9dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.465"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="How old are you?"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Eg. 18"
+                android:paddingStart="9dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.465"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="30dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age"
+                app:srcCompat="@drawable/question_bg" />
+
+            <LinearLayout
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="100dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Weight(kg)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer1"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q1"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Height(cm)"
+                    android:layout_marginRight="100dp"/>
+
+                <EditText
+                    android:id="@+id/answer2"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="BMI"
+                    android:layout_marginRight="195dp" />
+
+                <EditText
+                    android:id="@+id/answer3"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q3"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Blood Group"
+                    android:layout_marginRight="95dp"/>
+
+                <EditText
+                    android:id="@+id/answer4"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q4"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Pulse Rate(bpm)"
+                    android:layout_marginRight="40dp" />
+
+                <EditText
+                    android:id="@+id/answer5"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Respiratory Rate\n(breaths/min)"
+                    android:layout_marginRight="40dp" />
+
+                <EditText
+                    android:id="@+id/answer6"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q6"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Hemoglobin Level\n
+(g/dl)"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:id="@+id/answer7"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/q7">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="110dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Cycle(R/I)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer8"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linear"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Cycle Length(Days)"
+                    android:layout_marginRight="20dp"/>
+
+                <EditText
+                    android:id="@+id/answer9"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q1"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Marriage Status(yrs)"
+                    android:layout_marginRight="15dp"/>
+
+                <EditText
+                    android:id="@+id/answer10"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Pregnant(y/n)"
+                    android:layout_marginRight="82dp" />
+
+                <EditText
+                    android:id="@+id/answer11"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q3"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="No. of Abortions"
+                    android:layout_marginRight="75dp"/>
+
+                <EditText
+                    android:id="@+id/answer12"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q4"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="I beta-HCG(mIU/mL)"
+                    android:layout_marginRight="15dp" />
+
+                <EditText
+                    android:id="@+id/answer13"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="II beta-HCG(mIU/mL)"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:id="@+id/answer14"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q6"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="FSH(mIU/mL)"
+                    android:layout_marginRight="100dp"/>
+
+                <EditText
+                    android:id="@+id/answer15"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q7"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="LH(mIU/mL)"
+                    android:layout_marginRight="115dp"/>
+
+                <EditText
+                    android:id="@+id/answer16"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/q17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linear"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="FSH/LH"
+                    android:layout_marginRight="150dp"/>
+
+                <EditText
+                    android:id="@+id/answer17"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q1"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="120dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Hip(inch)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer18"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Waist(inch)"
+                    android:layout_marginRight="90dp" />
+
+                <EditText
+                    android:id="@+id/answer19"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q3"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:text="Waist:Hip Ratio"
+                    android:layout_marginRight="58dp"/>
+
+                <EditText
+                    android:id="@+id/answer20"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q4"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="TSH (mIU/L)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer21"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="80dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="AMH(ng/mL)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer22"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q6"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="PRL(ng/mL)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer23"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q7"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="60dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Vit D3 (ng/mL)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer24"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linear"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="100dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="PRG(ng/mL)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer25"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q1"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="105dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="RBS(mg/dl)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer26"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Weight gain(Y/N)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer27"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q3"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Hair Growth(Y/N)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer28"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q4"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Skin darkening (Y/N)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer29"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="75dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Hair Loss(Y/N)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer30"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q6"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="85dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Pimples(Y/N)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer31"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q7"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="60dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Fast food (Y/N)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer32"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linear"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Regular Exercise(Y/N)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer33"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q1"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="BP Systolic (mmHg)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer34"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="BP Diastolic (mmHg)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer35"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q3"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="85dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Follicle No. (L)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer36"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q4"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginRight="75dp"
+                    android:text="Follicle No. (R)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer37"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Avg. F size (L) (mm)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer38"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q6"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Avg. F size (R) (mm)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer39"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/q7"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="14dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Endometrium (mm)"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/answer40"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/predict"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/question_button"
+                android:fontFamily="@font/montserrat"
+                android:text="Predict"
+                android:layout_marginStart="80dp"
+                android:textAllCaps="false"
+                android:textColor="#445660"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="400dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
