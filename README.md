@@ -11,3 +11,5 @@ Here are some of the potential future advancements that can help improve our Pro
 - Schedule lab tests for users.
 - Autofill the data from lab reports with the app itself.
 - Introduce a calendar along with a reminder system to help with PCOS/PCOD.
+
+![Google Pixel 2 - 5](https://user-images.githubusercontent.com/78225681/178310739-d383247b-9687-48de-a9c6-dad0c4d14060.png)
